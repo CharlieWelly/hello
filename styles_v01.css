@@ -1,3 +1,9 @@
+#bottom-page div input, #search div input, #top-page div a {
+  font-family: Arial;
+  font-size: 14px;
+  color: black;
+}
+
 #top-page {
   display: flex;
   justify-content: flex-end;
@@ -6,18 +12,19 @@
   margin: 10px;
 }
 #top-page div a {
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  text-decoration: none;
+}
+#top-page div a:hover {
+  text-decoration: underline;
 }
 
 #middle-page {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
 }
 #middle-page div {
-  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 #middle-page div img {
   width: 300px;
@@ -30,9 +37,16 @@
 #search div input {
   width: 500px;
   height: 35px;
-  border-radius: 15px;
-  border: 1px solid lightgray;
-  padding: 0 0 0 10px;
+  border-radius: 20px;
+  border: 1px solid #dadada;
+  padding-left: 15px;
+}
+#search div input:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px #dadada;
+}
+#search div input:hover {
+  box-shadow: 1px 1px 10px #dadada;
 }
 
 #bottom-page {
@@ -44,12 +58,15 @@
 }
 #bottom-page div input {
   height: 35px;
+  width: 150px;
   margin: 5px;
   background-color: #f8f9fa;
+  border: none;
   border-radius: 5px;
-  border: 1px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+}
+#bottom-page div input:hover {
+  box-shadow: 0px 1px 1px #dadada;
+  border: 1px solid #dadada;
 }
 
 /*# sourceMappingURL=styles_v01.css.map */
