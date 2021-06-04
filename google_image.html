@@ -2,16 +2,62 @@
 <html lang=eng>
 
 <head>
-    <title>google image search</title>
+    <title>Google Image Search</title>
+    <link rel="stylesheet" href="styles_v01.css">
+    <style>
+        #images {
+            display: flex;
+            justify-content: center;
+        }
+
+        #images div {
+            position: relative;
+            width: 300px;
+            height: 102px;
+            background-image: url("google_logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+            margin-top: 100px;
+        }
+
+        #images div span {
+            position: absolute;
+            bottom: 0px;
+            right: 5px;
+            font-family: Arial;
+            font-size: 18px;
+            color: #4285f4;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="top-page">
+        <div>
+            <a href="input.html">Google Search</a>
+        </div>
+    </div>
 
-    <a href="input.html">Google Search</a>
+    <div id="images">
+        <div>
+            <span>images</span>
+        </div>
+    </div>
+
     <form action="https://google.com/search">
-        <input type="text" name="q">
-        <input type="hidden" name="tbm" value="isch">
-        <input type="submit" value="Google Image Search">
+        <div id="search">
+            <div>
+                <input type="text" name="q" autofocus>
+            </div>
+        </div>
+
+        <div id="bottom-page">
+            <div>
+                <input type="hidden" name="tbm" value="isch">
+                <input type="submit" value="Google Image Search">
+            </div>
+        </div>
     </form>
 </body>
 
