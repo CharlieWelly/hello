@@ -1,2 +1,3 @@
 # ignore these following files:
 google_example.txt
+.DS*

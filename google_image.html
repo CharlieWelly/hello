@@ -6,22 +6,16 @@
     <link rel="stylesheet" href="styles_v01.css">
     <style>
         #images {
-            display: flex;
-            justify-content: center;
-        }
-
-        #images div {
             position: relative;
+            margin: 100px auto 20px auto;
             width: 300px;
             height: 102px;
             background-image: url("google_logo.png");
             background-size: contain;
             background-repeat: no-repeat;
-            margin-bottom: 20px;
-            margin-top: 100px;
         }
 
-        #images div span {
+        #images span {
             position: absolute;
             bottom: 0px;
             right: 5px;
@@ -34,29 +28,21 @@
 
 <body>
     <div id="top-page">
-        <div>
-            <a href="input.html">Google Search</a>
-        </div>
+        <a href="input.html">Google Search</a>
     </div>
 
     <div id="images">
-        <div>
-            <span>images</span>
-        </div>
+        <span>images</span>
     </div>
 
     <form action="https://google.com/search">
         <div id="search">
-            <div>
-                <input type="text" name="q" autofocus>
-            </div>
+            <input type="text" name="q" autofocus>
         </div>
 
         <div id="bottom-page">
-            <div>
-                <input type="hidden" name="tbm" value="isch">
-                <input type="submit" value="Google Image Search">
-            </div>
+            <input type="hidden" name="tbm" value="isch">
+            <input type="submit" value="Google Image Search">
         </div>
     </form>
 </body>
