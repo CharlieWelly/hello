@@ -3,22 +3,77 @@
 
 <head>
     <title>Google Advanced Search</title>
+    <link rel="Stylesheet" href="advance_styles.css">
 </head>
 
 <body>
-    <a href="input.html">Google Search</a>
+    <div id="top-page">
+        <a href="input.html"><img src="google_logo.png" alt="google"></a>
+    </div>
+
+    <div id="banner">Advanced Search</div>
 
     <form action="https://google.com/search" id="search-form">
-        <label form="search-form">Find pages with ...</label>
-        <label for="all-these-words">All these words: </label>
-        <input type="text" name="as_q" id="all-these-words">
-        <label for="This-exact-word-or-phrase">This exact word or phrase: </label>
-        <input type="text" name="as_epq" id="This-exact-word-or-phrase">
-        <label for="any-of-these-word">Any of these words: </label>
-        <input type="text" name="as_oq" id="any-of-these-word">
-        <label for="non-of-these-word">Non of these words: </label>
-        <input type="text" name="as_eq" id="non-of-these-word">
-        <input type="submit" value="Google Advanced Search">
+        <div id="main-page">
+            <div class="row">
+                <div class="col col-2" id="first-row-label">Find pages with ... </div>
+                <div class="col col-6"></div>
+                <div class="col col-4" id="first-row-explaination">To do this in the search box. </div>
+            </div>
+            <div class="row">
+                <div class="col col-2">
+                    <label for="all-these-words">All these words:</label>
+                </div>
+                <div class="col col-6">
+                    <input type="text" name="as_q" id="all-these-words" autofocus>
+                </div>
+                <div class="col col-4">
+                    <p>Type the important words: <span class="example-text">tri-colour rat terrier</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-2">
+                    <label for="This-exact-word-or-phrase">This exact word or phrase:</label>
+                </div>
+                <div class="col col-6">
+                    <input type="text" name="as_epq" id="This-exact-word-or-phrase">
+                </div>
+                <div class="col col-4">
+                    <p>Put exact words in quotes: <span class="example-text">"rat terrier"</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-2">
+                    <label for="any-of-these-word">Any of these words:</label>
+                </div>
+                <div class="col col-6">
+                    <input type="text" name="as_oq" id="any-of-these-word">
+                </div>
+                <div class="col col-4">
+                    <p>Type <span class="example-text">OR</span> between all the words you want: <span
+                            class="example-text">miniature OR standard</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-2">
+                    <label for="non-of-these-word">Non of these words:</label>
+                </div>
+                <div class="col col-6">
+                    <input type="text" name="as_eq" id="non-of-these-word">
+                </div>
+                <div class="col col-4">
+                    <p>Put a minus sign just before words that you don't want: <br><span class="example-text">-rodent,
+                            -"Jack Russel"</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-2"></div>
+                <div class="col col-6" id="submit">
+                    <input type="submit" value="Google Advanced Search">
+                </div>
+                <div class="col col-4"></div>
+            </div>
+        </div>
     </form>
 </body>
 
