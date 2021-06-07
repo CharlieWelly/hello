@@ -1,23 +1,40 @@
-* {
-  box-sizing: border-box;
+/* basic elements */
+body {
   font-family: Arial;
   font-size: 13px;
   color: #333;
 }
 
-#top-page {
+.main-page {
+  padding-top: 40px;
+  padding-left: 45px;
+  padding-right: 25px;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  height: 42px;
+}
+
+.col {
+  height: 30px;
+}
+
+/* specific divs */
+.top-page {
   margin-bottom: 20px;
   padding-top: 10px;
   padding-left: 10px;
 }
-#top-page a img {
+.top-page a img {
   max-width: 80px;
 }
-#top-page a:hover {
+.top-page a:hover {
   cursor: pointer;
 }
 
-#banner {
+.banner {
   font-size: 20px;
   color: #d93025;
   padding-top: 25px;
@@ -26,45 +43,36 @@
   border-bottom: 1px solid lightgray;
 }
 
-#main-page {
-  padding-top: 40px;
-  padding-left: 45px;
-  padding-right: 25px;
-}
-#main-page .row {
-  display: flex;
-  justify-content: flex-start;
-  height: 42px;
-}
-#main-page .row .col {
-  height: 30px;
-}
-#main-page .row .col-2 {
+.col-2 {
   display: flex;
   align-items: center;
   flex: 16.66%;
   min-width: 167px;
 }
-#main-page .row #first-row-label {
+
+#first-row-col-2 {
   font-size: 16px;
   font-weight: 500;
   color: #222;
 }
-#main-page .row .col-6 {
+
+.col-6 {
   flex: 50%;
 }
-#main-page .row .col-6 input {
+.col-6 input {
   width: 100%;
+  box-sizing: border-box;
   height: inherit;
   border: 1px solid #d9d9d9;
   border-top: 1px solid #c0c0c0;
   padding: 1px 8px;
 }
-#main-page .row #submit {
+
+#submit-col-6 {
   display: flex;
   justify-content: flex-end;
 }
-#main-page .row #submit input {
+#submit-col-6 input {
   width: auto;
   height: inherit;
   background-color: #4d90fe;
@@ -74,22 +82,27 @@
   font-weight: bold;
   color: #fff;
 }
-#main-page .row .col-4 {
+#submit-col-6 input:hover {
+  background-image: linear-gradient(#4d90fe, #4787ed);
+}
+
+.col-4 {
   display: flex;
   align-items: center;
   flex: 33.33%;
 }
-#main-page .row .col-4 p {
+.col-4 p {
   font-size: 11px;
   color: #555;
   padding-left: 20px;
 }
-#main-page .row .col-4 p .example-text {
+.col-4 p .example-text-col-4 {
   font-size: inherit;
   color: #666;
   font-family: monospace;
 }
-#main-page .row #first-row-explaination {
+
+#first-row-col-4 {
   padding: 0;
   font-weight: 700;
   color: #777;
